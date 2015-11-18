@@ -13,6 +13,10 @@
 		63B46D381BFB513C006D9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B46D361BFB513C006D9279 /* Main.storyboard */; };
 		63B46D3A1BFB513C006D9279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B46D391BFB513C006D9279 /* Assets.xcassets */; };
 		63B46D3D1BFB513C006D9279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B46D3B1BFB513C006D9279 /* LaunchScreen.storyboard */; };
+		63B46D451BFB5151006D9279 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B46D441BFB5151006D9279 /* JavaScriptCore.framework */; };
+		63B46D481BFB5190006D9279 /* TestJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B46D471BFB5190006D9279 /* TestJSObject.m */; };
+		63B46D4D1BFC261D006D9279 /* Alert.js in Resources */ = {isa = PBXBuildFile; fileRef = 63B46D4A1BFC261D006D9279 /* Alert.js */; };
+		63B46D511BFC297D006D9279 /* Basic.html in Resources */ = {isa = PBXBuildFile; fileRef = 63B46D501BFC297C006D9279 /* Basic.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		63B46D391BFB513C006D9279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B46D3C1BFB513C006D9279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B46D3E1BFB513C006D9279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B46D441BFB5151006D9279 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		63B46D461BFB5190006D9279 /* TestJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSObject.h; sourceTree = "<group>"; };
+		63B46D471BFB5190006D9279 /* TestJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSObject.m; sourceTree = "<group>"; };
+		63B46D4A1BFC261D006D9279 /* Alert.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Alert.js; sourceTree = "<group>"; };
+		63B46D501BFC297C006D9279 /* Basic.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Basic.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B46D451BFB5151006D9279 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 		63B46D211BFB513C006D9279 = {
 			isa = PBXGroup;
 			children = (
+				63B46D441BFB5151006D9279 /* JavaScriptCore.framework */,
 				63B46D2C1BFB513C006D9279 /* JSDemo */,
 				63B46D2B1BFB513C006D9279 /* Products */,
 			);
@@ -58,6 +69,7 @@
 		63B46D2C1BFB513C006D9279 /* JSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				63B46D491BFC260E006D9279 /* JS */,
 				63B46D301BFB513C006D9279 /* AppDelegate.h */,
 				63B46D311BFB513C006D9279 /* AppDelegate.m */,
 				63B46D331BFB513C006D9279 /* ViewController.h */,
@@ -67,6 +79,8 @@
 				63B46D3B1BFB513C006D9279 /* LaunchScreen.storyboard */,
 				63B46D3E1BFB513C006D9279 /* Info.plist */,
 				63B46D2D1BFB513C006D9279 /* Supporting Files */,
+				63B46D461BFB5190006D9279 /* TestJSObject.h */,
+				63B46D471BFB5190006D9279 /* TestJSObject.m */,
 			);
 			path = JSDemo;
 			sourceTree = "<group>";
@@ -77,6 +91,15 @@
 				63B46D2E1BFB513C006D9279 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63B46D491BFC260E006D9279 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+				63B46D4A1BFC261D006D9279 /* Alert.js */,
+				63B46D501BFC297C006D9279 /* Basic.html */,
+			);
+			name = JS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +162,8 @@
 				63B46D3D1BFB513C006D9279 /* LaunchScreen.storyboard in Resources */,
 				63B46D3A1BFB513C006D9279 /* Assets.xcassets in Resources */,
 				63B46D381BFB513C006D9279 /* Main.storyboard in Resources */,
+				63B46D4D1BFC261D006D9279 /* Alert.js in Resources */,
+				63B46D511BFC297D006D9279 /* Basic.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B46D351BFB513C006D9279 /* ViewController.m in Sources */,
+				63B46D481BFB5190006D9279 /* TestJSObject.m in Sources */,
 				63B46D321BFB513C006D9279 /* AppDelegate.m in Sources */,
 				63B46D2F1BFB513C006D9279 /* main.m in Sources */,
 			);
