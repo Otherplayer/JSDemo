@@ -17,13 +17,31 @@
         
         <h2>This is html content, click red button to call js method !</h2>
         
-        <h2>点击按钮调用oc的方法<a href="javascript:callOC();" class="btn ps-cs6">调用oc</a></h2>
+        <h2>点击按钮调用oc的方法(无参)<a href="javascript:testobject.TestNOParameter();" class="btn ps-cs6">调用oc</a></h2>
+
+        <h2>点击按钮调用oc的方法(一参)<a href="javascript:testobject.TestOneParameter('hjjjh');" class="btn ps-cs6">调用oc</a></h2>
+        
+        <h2>点击按钮调用oc的方法(二参)<a href="javascript:testobject.TestTowParameterSecondParameter('sssss','ssss');" class="btn ps-cs6">调用oc</a></h2>
+        
         
         <script>
-            function test()
-            {
-                alert("You get it,OC call js successfully !");
+        function testobject(firstname,lastname)
+        {
+            this.firstname=firstname;
+            this.lastname=lastname;
+            
+            function TestNOParameter(){
             }
+            
+            function TestOneParameter(name){
+                this.lastname = name;
+            }
+            
+            function TestTowParameterSecondParameter(name,name2){
+                this.lastname = name;
+                this.lastname = name2;
+            }
+        }
         </script>
         
         
